@@ -17,8 +17,6 @@ apt-get install -y jq
 # Install gulp
 npm install -g gulp
 
-curl -sL https://raw.githubusercontent.com/mono/mono/master/scripts/nuget/nuget-bash-completion.sh | bash -
-
 # Change ownership of the .npm directory to the sudo (non-root) user
 chown -R $SUDO_USER ~/.npm
 
