@@ -1,5 +1,7 @@
 pool:
   name: 'Default'
+    demands:
+  - mono
 
 variables:
   buildConfiguration: 'Release'
