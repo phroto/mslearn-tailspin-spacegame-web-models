@@ -1,5 +1,7 @@
 pool:
-  name: 'Default'
+  vmImage: 'ubuntu-20.04'
+  demands:
+  - npm
 
 variables:
   buildConfiguration: 'Release'
@@ -32,7 +34,7 @@ steps:
     arguments: '--no-build --configuration $(buildConfiguration)'
     versioningScheme: byPrereleaseNumber
     majorVersion: '1'
-    minorVersion: '0'
+    minorVersion: '1'
     patchVersion: '0'
  
 - task: NuGetCommand@2
